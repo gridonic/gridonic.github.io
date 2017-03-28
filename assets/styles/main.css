@@ -50,7 +50,7 @@ ul {
     padding-top: 1.5em;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     .project-list::after {
         clear: both;
         content: "";
