@@ -9,7 +9,7 @@ var links = document.querySelectorAll('.link-primary');
 for (var i = 0; i < links.length; i++) {
     var link = links[i];
     var b = baffle(link, {
-        characters: '█',
+        characters: [String.fromCharCode(9608)],
         speed: 60
     });
 
