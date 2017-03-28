@@ -5,12 +5,9 @@
     margin: 0;
 }
 
-p:not(:last-child) {
+p:not(:last-child),
+ul:not(:last-child) {
     margin: 0 0 1em;
-}
-
-ul {
-    margin: 1em 0;
 }
 
 :root {
@@ -135,11 +132,16 @@ ul {
 
 .project-title > .emoji {
     font-size: 2em;
+    line-height: 48px;
     text-align: center;
 }
 
 .project-title > .logo,
 .project-title > .emoji {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 48px;
     margin-right: 8px;
     width: 48px;
 }
