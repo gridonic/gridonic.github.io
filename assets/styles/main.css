@@ -41,9 +41,25 @@ ul {
 
 .page-headline {
     font-size: calc(1vw + 16px);
-    margin: 2em auto;
-    padding: 1em;
+    margin: 3em auto;
     text-align: center;
+}
+
+.page-footer {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.125);
+    margin: 3em 0;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.page-footer > .copyright {
+    display: block;
+    margin-top: 3em;
+    opacity: 0.125;
+}
+
+.page-footer > .copyright::first-letter {
+    vertical-align: -1px;
 }
 
 .project-list > .item:not(:first-child) {
@@ -51,6 +67,10 @@ ul {
 }
 
 @media (min-width: 768px) {
+    .project-list {
+        margin: 0 -0.75em;
+    }
+
     .project-list::after {
         clear: both;
         content: "";
