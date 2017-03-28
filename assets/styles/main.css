@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+p:not(:last-child) {
+    margin: 0 0 1em;
+}
+
+ul {
+    margin: 1em 0;
+}
+
+:root {
+    box-sizing: border-box;
+    font-family: Fira Mono, monospace;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 2em;
+}
+
+.link-embrace {
+    color: currentColor;
+    display: inline-block;
+    text-decoration: inherit;
+}
+
+.link-primary {
+    color: #36f;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.page-container {
+    margin: auto;
+    max-width: 960px;
+    width: 100%;
+}
+
+.page-headline {
+    font-size: calc(1vw + 16px);
+    margin: 2em auto;
+    padding: 1em;
+    text-align: center;
+}
+
+.project-list > .item:not(:first-child) {
+    padding-top: 1.5em;
+}
+
+@media (min-width: 640px) {
+    .project-list::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    .project-list > .item {
+        float: left;
+        padding: 0.75em;
+        width: 50%;
+    }
+
+    .project-list > .item:not(:first-child) {
+        padding-top: 0.75em;
+    }
+
+    @supports (column-count: 2) {
+        .project-list {
+            column-count: 2;
+            column-gap: 0;
+        }
+
+        .project-list > .item {
+            float: none;
+            width: auto;
+
+            -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+                      page-break-inside: avoid; /* Firefox */
+                           break-inside: avoid; /* IE 10+ */
+        }
+    }
+}
+
+.project-card {
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.125);
+    padding: 1.5em;
+}
+
+.project-card > .title {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.125);
+    display: block;
+    margin: 0 0 1.25em 0;
+    padding-bottom: 0.75em;
+}
+
+.project-card > .description {
+    font-size: 0.875em;
+}
+
+.project-title {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.project-title > .logo,
+.project-title > .emoji,
+.project-title > .text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.project-title > .emoji {
+    font-size: 2em;
+    text-align: center;
+}
+
+.project-title > .logo,
+.project-title > .emoji {
+    margin-right: 8px;
+    width: 48px;
+}
+
+.project-title > .text {
+    width: calc(100% - 72px);
+}
