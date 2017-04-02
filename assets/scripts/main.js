@@ -23,3 +23,8 @@ for (var i = 0; i < links.length; i++) {
     link.addEventListener('mouseenter', function() { this.start(); }.bind(b));
     link.addEventListener('mouseleave', function() { this.reveal(1000); }.bind(b));
 }
+
+document.querySelector('[data-theme-switcher]').addEventListener('click',
+    function() {
+        location.hash = location.hash.indexOf('dark') > -1 ? '' : '/dark/';
+});
