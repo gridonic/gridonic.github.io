@@ -20,5 +20,18 @@ a {
 
 :root {
     box-sizing: border-box;
-    padding: vertical-base(2);
+
+    @supports (--foo: black) {
+        --color-text: $color-black;
+        --color-background: $color-white;
+
+        background-color: var(--color-background);
+
+        @at-root {
+            #\/dark\/:target {
+                --color-text: $color-white;
+                --color-background: $color-black;
+            };
+        }
+    }
 }

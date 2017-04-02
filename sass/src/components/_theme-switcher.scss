@@ -1,0 +1,20 @@
+.theme-switcher {
+    background: none;
+    border-color: var(--color-text) var(--color-text) transparent  transparent;
+    border-style: solid;
+    border-width: 1em;
+    cursor: pointer;
+    display: none;
+    outline: 0;
+    padding: 0;
+    transform-origin: top right;
+    transition: transform 333ms;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    @supports (--foo: black) {
+        display: inline-block;
+    }
+}

@@ -41,6 +41,10 @@ body {
     font-size: $font-text-size;
     line-height: $font-text-line-height;
     text-rendering: $font-text-rendering;
+
+    @supports (--foo: black) {
+        color: var(--color-text);
+    }
 }
 
 /*
