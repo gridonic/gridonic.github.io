@@ -1,0 +1,12 @@
+.link-primary {
+    color: $color-blue-ribbon;
+    text-decoration: none;
+    white-space: nowrap;
+
+    @supports(text-decoration-skip: ink) {
+        text-decoration-color: currentColor;
+        text-decoration-line: underline;
+        text-decoration-skip: ink;
+        text-decoration-style: solid;
+    }
+}

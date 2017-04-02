@@ -1,0 +1,27 @@
+.project-card {
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.125);
+    padding: vertical-base(1.5);
+    transition: box-shadow 333ms;
+
+    &:hover {
+        box-shadow: 0 0 0 1px $color-blue-ribbon;
+
+        > .title {
+            box-shadow: 0 1px 0 $color-blue-ribbon;
+        }
+    }
+
+    > .title {
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.125);
+        display: block;
+        margin: 0 0 vertical-base(1.25) 0;
+        padding-bottom: vertical-base(0.75);
+        transition: box-shadow 333ms;
+    }
+
+    > .description {
+        font-size: 0.875rem;
+        line-height: vertical-base(0.875);
+    }
+}

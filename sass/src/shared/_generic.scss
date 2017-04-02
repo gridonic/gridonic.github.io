@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// Generic styles.
+// -----------------------------------------------------------------------------
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+p:not(:last-child),
+ul:not(:last-child) {
+    margin: 0 0 vertical-base(1);
+}
+
+a {
+    color: currentColor;
+    text-decoration: inherit;
+}
+
+:root {
+    box-sizing: border-box;
+    padding: vertical-base(2);
+}

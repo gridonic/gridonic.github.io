@@ -1,0 +1,18 @@
+/*
+---
+name: Components
+category: components
+hidePath: true
+---
+
+Components ideally are pieces of CSS that are independent, detached,
+context unaware and as tiny as possible. A component may also be a composition
+of other components.
+*/
+@import "components/link-primary";
+@import "components/page/container";
+@import "components/page/footer";
+@import "components/page/headline";
+@import "components/project/card";
+@import "components/project/list";
+@import "components/project/title";

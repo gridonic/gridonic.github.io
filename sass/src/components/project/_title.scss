@@ -1,0 +1,31 @@
+.project-title {
+    font-size: 1rem;
+    font-weight: 500;
+
+    > .logo,
+    > .emoji,
+    > .text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    > .emoji {
+        font-size: 2em;
+        line-height: vertical-base(2.25);
+        text-align: center;
+    }
+
+    > .logo,
+    > .emoji {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: vertical-base(2.25);
+        margin-right: 8px;
+        width: vertical-base(2.25);
+    }
+
+    > .text {
+        width: calc(100% - 72px);
+    }
+}

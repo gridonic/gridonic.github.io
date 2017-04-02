@@ -1,0 +1,39 @@
+.project-list {
+    > .item:not(:first-child) {
+        padding-top: vertical-base(1.5);
+    }
+
+    @include media(">=medium") {
+        margin: 0 -vertical-base(1);
+
+        &::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        > .item {
+            float: left;
+            padding: vertical-base(1);
+            width: 50%;
+
+            &:not(:first-child) {
+                padding-top: vertical-base(1);
+            }
+        }
+
+        @supports (column-count: 2) {
+            column-count: 2;
+            column-gap: 0;
+
+            > .item {
+                float: none;
+                width: auto;
+
+                -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+                          page-break-inside: avoid; /* Firefox */
+                               break-inside: avoid; /* IE 10+ */
+            }
+        }
+    }
+}
