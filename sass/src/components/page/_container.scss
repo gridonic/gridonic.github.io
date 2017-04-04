@@ -1,6 +1,6 @@
 .page-container {
     margin: auto;
-    max-width: 960px;
+    max-width: map-get($breakpoints, 'huge');
     padding: vertical-base(2);
     width: 100%;
 

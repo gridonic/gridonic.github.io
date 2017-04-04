@@ -3,14 +3,10 @@
         padding-top: vertical-base(1.5);
     }
 
-    @include media(">=medium") {
-        margin: 0 -vertical-base(1);
+    @include media(">=small") {
+        @include group;
 
-        &::after {
-            clear: both;
-            content: "";
-            display: table;
-        }
+        margin: 0 -#{vertical-base(1)};
 
         > .item {
             float: left;
@@ -21,8 +17,10 @@
                 padding-top: vertical-base(1);
             }
         }
+    }
 
-        @supports (column-count: 2) {
+    @supports (column-count: 2) {
+        @include media(">=small") {
             column-count: 2;
             column-gap: 0;
 
@@ -34,6 +32,14 @@
                           page-break-inside: avoid; /* Firefox */
                                break-inside: avoid; /* IE 10+ */
             }
+        }
+
+        @include media(">=medium") {
+            column-count: 3;
+        }
+
+        @include media(">=huge") {
+            column-count: 4;
         }
     }
 }

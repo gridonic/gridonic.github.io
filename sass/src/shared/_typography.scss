@@ -32,15 +32,18 @@ the commonly used weight names below.<sup>[2]</sup>
 [2]: http://www.w3.org/TR/css3-fonts/#font-weight-prop
 */
 :root {
-    font-size: 16px;
+    font-family: $font-text-family;
+    font-size: $font-text-size;
+    text-rendering: $font-text-rendering;
+
+    @include media(">=huge") {
+        font-size: $font-text-size * 1.125;
+    }
 }
 
 body {
     color: $color-black;
-    font-family: $font-text-family;
-    font-size: $font-text-size;
-    line-height: $font-text-line-height;
-    text-rendering: $font-text-rendering;
+    line-height: vertical-base();
 
     @supports (--foo: black) {
         color: var(--color-text);

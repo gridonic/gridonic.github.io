@@ -1,0 +1,20 @@
+.list-bullet {
+    list-style: none;
+    padding: 0;
+
+    > .item {
+        overflow: hidden;
+        padding-left: 3em;
+        position: relative;
+        text-overflow: ellipsis;
+
+        &::before {
+            content: "\2022";
+            left: 0;
+            position: absolute;
+            top: 0;
+            text-align: center;
+            width: 3em;
+        }
+    }
+}

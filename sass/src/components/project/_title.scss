@@ -1,12 +1,23 @@
 .project-title {
+    @include group;
+
+    display: block;
     font-size: 1rem;
     font-weight: 500;
+
+    @supports (display: flex) {
+        align-items: center;
+        display: flex;
+    }
 
     > .logo,
     > .emoji,
     > .text {
-        display: inline-block;
-        vertical-align: middle;
+        float: left;
+
+        @supports (display: flex) {
+            float: none;
+        }
     }
 
     > .emoji {
@@ -21,11 +32,15 @@
         background-repeat: no-repeat;
         background-size: contain;
         height: vertical-base(2.25);
-        margin-right: 8px;
         width: vertical-base(2.25);
     }
 
     > .text {
-        width: calc(100% - 72px);
+        padding-left: 1em;
+        width: calc(100% - #{vertical-base(2.25)});
+
+        @supports (display: flex) {
+            width: auto;
+        }
     }
 }
