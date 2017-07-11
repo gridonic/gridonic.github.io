@@ -34,7 +34,7 @@
             }
         }
 
-        @include media(">=medium") {
+        @include media(">=large") {
             column-count: 3;
         }
 
