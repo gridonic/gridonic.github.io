@@ -495,18 +495,20 @@ a {
   text-decoration: inherit; }
 
 :root {
-  background-blend-mode: soft-light, screen;
-  background-color: #dcd9d4;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.5) 50%);
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #fafafa; }
   @supports (--foo: black) {
     :root {
       --color-text: #333;
-      --color-background: #fefefe;
-      background-color: var(--color-background); }
+      --color-highlight: #0396ff;
+      --color-background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.5) 50%) #fafafa;
+      background: var(--color-background);
+      background-blend-mode: soft-light, screen; }
       #\/dark\/:target {
-        --color-text: #fefefe;
-        --color-background: #333; } }
+        --color-text: #fafafa;
+        --color-highlight: #0396ff;
+        --color-background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+        background-blend-mode: normal; } }
 
 :root {
   font-family: Input Mono Narrow, monospace;
@@ -617,6 +619,9 @@ of other components.
   color: #0396ff;
   text-decoration: none;
   white-space: nowrap; }
+  @supports (--foo: black) {
+    .link-primary {
+      color: var(--color-highlight); } }
   @supports (text-decoration-skip: ink) {
     .link-primary {
       text-decoration-color: currentColor;
@@ -676,6 +681,9 @@ of other components.
   transition: box-shadow 333ms; }
   .project-card:hover {
     box-shadow: 0 0 0 1px #0396ff; }
+    @supports (--foo: black) {
+      .project-card:hover {
+        box-shadow: 0 0 0 1px var(--color-highlight); } }
   .project-card > .title {
     margin: 0 0 2.75rem 0; }
   .project-card > .description {
