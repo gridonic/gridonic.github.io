@@ -3,6 +3,10 @@
     text-decoration: none;
     white-space: nowrap;
 
+    @supports (--foo: black) {
+        color: var(--color-highlight);
+    }
+
     @supports(text-decoration-skip: ink) {
         text-decoration-color: currentColor;
         text-decoration-line: underline;

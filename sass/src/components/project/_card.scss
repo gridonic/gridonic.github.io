@@ -7,6 +7,10 @@
 
     &:hover {
         box-shadow: 0 0 0 1px $color-blue-ribbon;
+
+        @supports (--foo: black) {
+            box-shadow: 0 0 0 1px var(--color-highlight);
+        }
     }
 
     > .title {
