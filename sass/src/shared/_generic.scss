@@ -19,6 +19,13 @@ a {
 }
 
 :root {
+
+    // 040 Coup de Grace
+    background-blend-mode: soft-light, screen;
+    background-color: #dcd9d4;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%),
+                      radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
+
     box-sizing: border-box;
 
     @supports (--foo: black) {

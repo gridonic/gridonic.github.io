@@ -1,46 +1,21 @@
 .project-title {
-    @include group;
-
     display: block;
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 500;
+    outline: 0;
 
-    @supports (display: flex) {
-        align-items: center;
-        display: flex;
-    }
-
-    > .logo,
-    > .emoji,
-    > .text {
-        float: left;
-
-        @supports (display: flex) {
-            float: none;
-        }
-    }
-
-    > .emoji {
-        font-size: 2em;
-        line-height: vertical-base(2.25);
-        text-align: center;
-    }
-
-    > .logo,
-    > .emoji {
+    > .logo {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        height: vertical-base(2.25);
-        width: vertical-base(2.25);
+        display: block;
+        margin: 2em auto;
+        padding-top: 35%;
+        width: 50%;
     }
 
     > .text {
-        padding-left: 1em;
-        width: calc(100% - #{vertical-base(2.25)});
-
-        @supports (display: flex) {
-            width: auto;
-        }
+        display: block;
+        text-align: center;
     }
 }

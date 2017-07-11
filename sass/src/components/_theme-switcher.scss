@@ -7,11 +7,11 @@
     display: none;
     outline: 0;
     padding: 0;
-    transform-origin: top right;
-    transition: transform 333ms;
+    transform-origin: top left;
+    transition: transform 178ms ease-in-out;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.5);
     }
 
     @supports (--foo: black) {

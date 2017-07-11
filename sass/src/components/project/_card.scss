@@ -7,18 +7,10 @@
 
     &:hover {
         box-shadow: 0 0 0 1px $color-blue-ribbon;
-
-        > .title {
-            box-shadow: 0 1px 0 $color-blue-ribbon;
-        }
     }
 
     > .title {
-        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.125),
-                    0 1px 0 rgba(255, 255, 255, 0.125);
-        margin: 0 0 vertical-base(1.25) 0;
-        padding-bottom: vertical-base(0.75);
-        transition: box-shadow 333ms;
+        margin: 0 0 vertical-base(2) 0;
     }
 
     > .description {
