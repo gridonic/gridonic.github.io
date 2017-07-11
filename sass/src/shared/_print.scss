@@ -1,28 +1,3 @@
-/*
----
-name: Print
-category: print
-hidePath: true
----
-
-By default the global print styles from the [HTML5 Boilerplate] are included.
-Only adjust the global `_print.scss` styles if you *really* have to do it and
-know what you’re doing.
-
-⚠️ Otherwise *always* place print styles into their belonging component.
-
-```scss
-.my-component {
-    // Styles…
-
-    @include media("print") {
-        // Adjustments …
-    }
-}
-```
-
-[HTML5 Boilerplate]: https://github.com/msikma/h5bp-print-styles
-*/
 @media print {
     *,
     *::before,
