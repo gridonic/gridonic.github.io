@@ -19,26 +19,32 @@ a {
 }
 
 :root {
-
-    // 040 Coup de Grace
-    background-blend-mode: soft-light, screen;
-    background-color: #dcd9d4;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%),
-                      radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
-
     box-sizing: border-box;
+    background-color: $color-alabaster;
 
     @supports (--foo: black) {
-        --color-text: $color-black;
-        --color-background: $color-white;
+        --color-text: $color-mine-shaft;
+        --color-highlight: $color-blue-ribbon;
 
-        background-color: var(--color-background);
+        // 040 Coup de Grace
+        --color-background: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%),
+                            radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%)
+                            $color-alabaster;
+
+        background: var(--color-background);
+        background-blend-mode: soft-light, screen;
+
 
         @at-root {
             #\/dark\/:target {
-                --color-text: $color-white;
-                --color-background: $color-black;
-            };
+                --color-text: $color-alabaster;
+                --color-highlight: $color-blue-ribbon;
+
+                // 100 Vicious Stance
+                --color-background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+                background-blend-mode: normal;
+            }
         }
     }
 }

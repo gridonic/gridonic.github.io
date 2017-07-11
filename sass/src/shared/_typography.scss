@@ -9,7 +9,7 @@
 }
 
 body {
-    color: $color-black;
+    color: $color-mine-shaft;
     line-height: vertical-base();
 
     @supports (--foo: black) {
