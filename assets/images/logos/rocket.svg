@@ -1,0 +1,18 @@
+<svg width="193" height="140" viewBox="0 0 193 140" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M31 139H17l-5-16h24l-5 16zm144 0h-18l-3-24h24l-3 24z" stroke="#1050FF" stroke-width="2" fill="#FFF" fill-rule="nonzero" stroke-linejoin="round"/>
+    <path d="M32 123H16v-21l8-6 8 6v21zm74 16l-4-11H88l-4 11h22zm14-79h23v68H47V60h73z" fill="#FFF" fill-rule="nonzero"/>
+    <path fill="#FFF" fill-rule="nonzero" d="M90 71l-5-42L95 6l10 23-5 42z"/>
+    <path d="M24 96l8 6v21h-8V96zm79.8 37l-1.8-5H88l-1.8 5h17.6zM95 6l10 23-5 42h-5V6zm48 54v55H47l96-55z" fill="#CCEFFF" fill-rule="nonzero"/>
+    <path d="M159 110l2-2-4-4 2-2m7 8l2-2-4-4 2-2m7 8l2-2-4-4 2-2" stroke="#1050FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path stroke="#1050FF" stroke-width="2" stroke-linejoin="round" d="M98 123l-3 2-3-2v-3l3-2 3 2z"/>
+    <path d="M106 139l-4-11H88l-4 11h22zm-74-16H16v-21l8-6 8 6v21zm-16-16h-3 3zm0-5l-2-1 2 1zm0 11h-3 3zm0 6h-3 3zm16-12h3-3zm0 6h3-3zm0 6h3-3zM20 99l-2-2 2 2zm12 3l2-1-2 1zm-4-3l2-2-2 2zm-14.7 28h21.5-21.5z" stroke="#1050FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 119l2-3-2-3 2-3-2-3 2-3m4 15l2-3-2-3 2-3-2-3 2-3M10 139h174m5 0h3M1 139h3" stroke="#1050FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path stroke="#1050FF" stroke-width="2" fill="#FFF" fill-rule="nonzero" stroke-linejoin="round" d="M99 34.5L95 37l-4-2.5v-5l4-2.5 4 2.5z"/>
+    <path stroke="#1050FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M90 71l-5-42L95 6l10 23-5 42z"/>
+    <path d="M84 81l-5 6-5-6 5-22 5 22zm16 0l-5 6-5-6 5-22 5 22zm16 0l-5 6-5-6 5-22 5 22z" stroke="#1050FF" stroke-width="2" fill="#FFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M80.9 67.3l7-14.1m-4.8 23.7L90 71m19.1-3.7l-7-14.1m4.8 23.7L100 71M95 6V1M74 81h10m6 0h10m6 0h10" stroke="#1050FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path stroke="#1050FF" stroke-width="2" fill="#CCEFFF" fill-rule="nonzero" stroke-linejoin="round" d="M166 132l6-6-3-5-3 3-3-3-3 5z"/>
+    <path stroke="#1050FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M177.3 121h7.7l-5 12h-4.2M95 92v6m0 4v2m4-14v6m0 4v2m-8-12v6m0 4v2m4 6v1m4-3v1m-8-1v1M79 92v6m0 4v2m4-14v6m0 4v2m-8-12v6m0 4v2m4 6v1m4-3v1m-8-1v1M111 92v6m0 4v2m4-14v6m0 4v2m-8-12v6m0 4v2m4 6v1m4-3v1m-8-1v1M120 60h23v68H47V60h25m-25 55h96"/>
+  </g>
+</svg>
