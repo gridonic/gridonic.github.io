@@ -643,8 +643,11 @@ of other components.
 .page-container {
   margin: auto;
   max-width: 1920px;
-  padding: 2.75rem;
+  padding: 1.375rem;
   width: 100%; }
+  @media (min-width: 1024px) {
+    .page-container {
+      padding: 2.75rem; } }
   .page-container > .switch {
     position: absolute;
     top: 0;
@@ -710,7 +713,7 @@ of other components.
         /* Firefox */
         break-inside: avoid;
         /* IE 10+ */ } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1440px) {
     .project-list {
       column-count: 3; } }
   @media (min-width: 1920px) {
@@ -728,8 +731,9 @@ of other components.
     background-size: contain;
     display: block;
     margin: 2em auto;
-    padding-top: 35%;
     width: 50%; }
+    .project-title > .logo:not(img) {
+      padding-top: 35%; }
   .project-title > .text {
     display: block;
     text-align: center; }
