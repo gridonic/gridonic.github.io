@@ -1,15 +1,14 @@
 .project-card {
-    border-radius: 5px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.125),
-                0 0 0 1px rgba(255, 255, 255, 0.125);
     padding: vertical-base(1.5);
-    transition: box-shadow 333ms;
 
-    &:hover {
-        box-shadow: 0 0 0 1px $color-blue-ribbon;
+    @at-root {
+        #\/dark\/:not(:target) & {
+            background: rgba($color-alabaster, 0.5);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+            transition: box-shadow 167ms ease-in-out;
 
-        @supports (--foo: black) {
-            box-shadow: 0 0 0 1px var(--color-highlight);
+            &:hover { box-shadow: 0 0 30px rgba(0, 0, 0, 0.25); }
         }
     }
 
