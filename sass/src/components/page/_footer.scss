@@ -1,10 +1,17 @@
 .page-footer {
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.125),
-                0 -1px 0 rgba(255, 255, 255, 0.125);
     margin: vertical-base(3) auto;
-    padding-top: vertical-base(1);
     max-width: map-get($breakpoints, "small");
+    position: relative;
     text-align: center;
+
+    &::before {
+        background-color: var(--color-text);
+        content: "";
+        display: block;
+        height: 1px;
+        margin-bottom: vertical-base(1);
+        opacity: 0.125;
+    }
 
     > .copyright {
         display: block;
