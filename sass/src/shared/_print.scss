@@ -23,7 +23,7 @@
         content: " (" attr(title) ")";
     }
 
-    a[href^="#"]::after, // Don't show links that are fragment identifiers,
+    a[href^="#"]::after, // Don’t show links that are fragment identifiers,
     a[href^="javascript:"]::after { // or use the `javascript:` pseudo protocol
         content: "";
     }
