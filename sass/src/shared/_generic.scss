@@ -19,8 +19,9 @@ a {
 }
 
 :root {
-    box-sizing: border-box;
     background-color: $color-alabaster;
+    box-sizing: border-box;
+    position: relative;
 
     @supports (--foo: black) {
         --color-text: $color-mine-shaft;
@@ -34,13 +35,10 @@ a {
 
         @at-root {
             #\/dark\/:target {
-                --color-text: $color-alabaster;
-                --color-highlight: $color-blue-ribbon;
-
-                // 100 Vicious Stance
-                --color-background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-
-                background-blend-mode: normal;
+                --color-text: $color-green;
+                --color-highlight: $color-alabaster;
+                --color-background: $color-black;
+                --color-switch: $color-alabaster;
             }
         }
     }

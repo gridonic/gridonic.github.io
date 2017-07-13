@@ -9,8 +9,32 @@
     }
 
     > .switch {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
+    }
+
+    > .matrix {
+        color: $color-green;
+        height: 100%;
+        left: 0;
+        opacity: 0.25;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        user-select: none;
+        width: 100%;
+
+        @at-root {
+            #\/dark\/:not(:target) & {
+                display: none;
+            }
+        }
+    }
+
+    > .headline,
+    > .projects,
+    > .footer {
+        position: relative;
     }
 }

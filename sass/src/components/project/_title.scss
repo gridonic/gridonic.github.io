@@ -15,6 +15,12 @@
         &:not(img) {
             padding-top: 35%;
         }
+
+        @at-root {
+            #\/dark\/:target & {
+                display: none;
+            }
+        }
     }
 
     > .text {

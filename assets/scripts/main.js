@@ -29,3 +29,89 @@ document.querySelector('[data-theme-switcher]').addEventListener('click',
     function() {
         location.hash = location.hash.indexOf('dark') > -1 ? '' : '/dark/';
 });
+
+
+var $canvas = document.querySelector('[data-matrix]');
+var ctx = $canvas.getContext('2d');
+
+var fontSize = 12;
+var drops = [];
+var columns = 10;
+var color = '#0f0';
+
+function init() {
+    window.addEventListener('resize', function() { refresh($canvas); });
+    window.addEventListener('load', function() { refresh($canvas); });
+
+    requestInterval(draw, 33);
+}
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function refresh($el) {
+    $el.height = document.documentElement.offsetHeight;
+    $el.width = window.innerWidth;
+
+    columns = Math.ceil($el.width / fontSize);
+    color = getComputedStyle($el).color;
+
+    console.log(columns);
+
+    for (var i = drops.length; i < columns; i++) {
+        drops[i] = getRandomInt(0, $el.height);
+    }
+}
+
+function draw() {
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+    ctx.fillRect(0, 0, $canvas.width, $canvas.height);
+
+    ctx.fillStyle = color;
+    ctx.font = fontSize + 'px sans-serif';
+
+    for (var i = 0; i < drops.length; i++) {
+        var char = String.fromCharCode(('' + getRandomInt(19968, 25344)).toString(16));
+            var reset = Math.random() > 0.975;
+
+        // x = i * fontSize, y = value of drops[i] * fontSize
+        ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > $canvas.height && reset) {
+            drops[i] = 0;
+        }
+
+        drops[i] += 1;
+    }
+}
+
+function requestInterval(fn, delay) {
+    if (!window.requestAnimationFrame) {
+        return window.setInterval(fn, delay);
+    }
+
+    var start = new Date().getTime(),
+        handle = new Object();
+
+    function loop() {
+        var current = new Date().getTime(),
+            delta = current - start;
+
+        if (delta >= delay) {
+            fn.call();
+            start = new Date().getTime();
+        }
+
+        handle.value = requestAnimationFrame(loop);
+    }
+
+    handle.value = requestAnimationFrame(loop);
+
+    return handle;
+}
+
+init();
