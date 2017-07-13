@@ -26,14 +26,10 @@ a {
         --color-text: $color-mine-shaft;
         --color-highlight: $color-blue-ribbon;
 
-        // 040 Coup de Grace
-        --color-background: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%),
-                            radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%)
-                            $color-alabaster;
+        // 134 Glass Water
+        --color-background: linear-gradient(45deg, #dfe9f3 0%, white 100%);
 
         background: var(--color-background);
-        background-blend-mode: soft-light, screen;
-
 
         @at-root {
             #\/dark\/:target {
