@@ -25,6 +25,7 @@ a {
     @supports (--foo: black) {
         --color-text: $color-mine-shaft;
         --color-highlight: $color-blue-ribbon;
+        --color-switch: $color-black;
 
         // 134 Glass Water
         --color-background: linear-gradient(45deg, #dfe9f3 0%, white 100%);
