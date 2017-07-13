@@ -2,8 +2,8 @@
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.125),
                 0 -1px 0 rgba(255, 255, 255, 0.125);
     margin: vertical-base(3) auto;
-    max-width: map-get($breakpoints, 'small');
     padding-top: vertical-base(1);
+    max-width: map-get($breakpoints, "small");
     text-align: center;
 
     > .copyright {
