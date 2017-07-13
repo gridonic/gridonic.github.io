@@ -1,4 +1,5 @@
 :root {
+    color: $color-mine-shaft;
     font-family: $font-text-family;
     font-size: $font-text-size;
     text-rendering: $font-text-rendering;
@@ -6,15 +7,14 @@
     @include media(">=huge") {
         font-size: $font-text-size * 1.125;
     }
-}
-
-body {
-    color: $color-mine-shaft;
-    line-height: vertical-base();
 
     @supports (--foo: black) {
         color: var(--color-text);
     }
+}
+
+body {
+    line-height: vertical-base();
 }
 
 h1, .h1,
