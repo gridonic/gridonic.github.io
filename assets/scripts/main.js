@@ -28,6 +28,7 @@ for (var i = 0; i < links.length; i++) {
 document.querySelector('[data-theme-switcher]').addEventListener('click',
     function() {
         location.hash = location.hash.indexOf('dark') > -1 ? '' : '/dark/';
+        refresh($canvas);
 });
 
 
@@ -41,8 +42,8 @@ var color = '#0f0';
 
 function init() {
     window.addEventListener('resize', function() { refresh($canvas); });
-    window.addEventListener('load', function() { refresh($canvas); });
 
+    refresh($canvas);
     requestInterval(draw, 33);
 }
 
@@ -60,15 +61,13 @@ function refresh($el) {
     columns = Math.ceil($el.width / fontSize);
     color = getComputedStyle($el).color;
 
-    console.log(columns);
-
     for (var i = drops.length; i < columns; i++) {
         drops[i] = getRandomInt(0, $el.height);
     }
 }
 
 function draw() {
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.03)';
     ctx.fillRect(0, 0, $canvas.width, $canvas.height);
 
     ctx.fillStyle = color;
@@ -114,4 +113,4 @@ function requestInterval(fn, delay) {
     return handle;
 }
 
-init();
+window.addEventListener('load', init);
