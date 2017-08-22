@@ -3,9 +3,9 @@
 
     @at-root {
         #\/dark\/:not(:target) & {
-            background: rgba($color-alabaster, 0.5);
+            background: $color-alabaster;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
             transition: box-shadow 167ms ease-in-out;
 
             &:hover { box-shadow: 0 0 30px rgba(0, 0, 0, 0.25); }
