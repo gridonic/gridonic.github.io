@@ -11,18 +11,19 @@ document.querySelector('[data-emoji]').textContent = (
     }
 )(['💪', '❤️', '👏', '🙏', '🔥', '🤘', '👍', '🚀', '🦄', '🍿', '🎁']);
 
-var links = document.querySelectorAll('.link-primary');
+var $links = document.querySelectorAll('.link-primary');
+var darkMode = '#/dark/';
 
-for (var i = 0; i < links.length; i++) {
-    var link = links[i];
+for (var i = 0; i < $links.length; i++) {
+    var link = $links[i];
     var b = baffle(link, {
         characters: [String.fromCharCode(9608)],
         exclude: [],
         speed: 60
     });
 
-    link.addEventListener('mouseenter', function() { this.start(); }.bind(b));
-    link.addEventListener('mouseleave', function() { this.reveal(1000); }.bind(b));
+    link.addEventListener('mouseenter', function() { window.location.hash === darkMode && this.start(); }.bind(b));
+    link.addEventListener('mouseleave', function() { window.location.hash === darkMode && this.reveal(1000); }.bind(b));
 }
 
 document.querySelector('[data-theme-switcher]').addEventListener('click',

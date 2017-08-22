@@ -13,4 +13,14 @@
         text-decoration-skip: ink;
         text-decoration-style: solid;
     }
+
+    @at-root {
+        #\/dark\/:not(:target) & {
+            transition: opacity 333ms;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
 }

@@ -31,7 +31,7 @@ a {
         // 018 Cloudy Knoxville
         --color-background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 
-        background: var(--color-background);
+        background: var(--color-background) var(--color-switch);
 
         @at-root {
             #\/dark\/:target {
