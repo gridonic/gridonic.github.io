@@ -39,6 +39,8 @@ a {
                 --color-highlight: $color-alabaster;
                 --color-background: $color-black;
                 --color-switch: $color-alabaster;
+
+                background: var(--color-background);
             }
         }
     }
