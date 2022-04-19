@@ -1,0 +1,65 @@
+@import "./components/site-main.css";
+@import "./components/site-header.css";
+@import "./components/site-hero.css";
+@import "./components/site-container.css";
+@import "./components/site-footer.css";
+@import "./components/card-container.css";
+@import "./components/card-item.css";
+
+@custom-media --md-up screen and (min-width: 600px);
+
+:root {
+  --site-max-width: 1024px;
+  --outer-padding: 1.5rem;
+
+  --c-neutral: hsl(0, 0%, 0%);
+  --c-neutral-10: hsl(0, 0%, 10%);
+  --c-neutral-20: hsl(0, 0%, 20%);
+  --c-neutral-30: hsl(0, 0%, 30%);
+  --c-neutral-40: hsl(0, 0%, 40%);
+  --c-neutral-50: hsl(0, 0%, 50%);
+  --c-neutral-60: hsl(0, 0%, 60%);
+  --c-neutral-70: hsl(0, 0%, 70%);
+  --c-neutral-80: hsl(0, 0%, 80%);
+  --c-neutral-90: hsl(0, 0%, 90%);
+  --c-neutral-100: hsl(0, 0%, 100%);
+
+  --c-brand: hsl(205, 100%, 51%);
+}
+
+html {
+  --c-text: var(--c-neutral-10);
+  --c-fancy: var(--c-neutral-10);
+  --c-background: var(--c-neutral-100);
+  
+  --box-shaddow-light: 0 4px 22px 3px var(--c-neutral-90);
+  --box-shaddow-dark: 0 4px 22px 3px var(--c-neutral-80);
+  font-family: Input Mono Narrow,monospace;
+}
+
+html[data-theme='dark'] {
+  --c-text: var(--c-neutral-90);
+  --c-fancy: var(--c-brand);
+  --c-background: var(--c-neutral-20);
+  --box-shaddow-light: 0 4px 22px 3px var(--c-neutral-10);
+  --box-shaddow-dark: 0 4px 22px 3px var(--c-neutral);
+}
+
+body {
+  background-color: var(--c-background);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--c-text);
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+

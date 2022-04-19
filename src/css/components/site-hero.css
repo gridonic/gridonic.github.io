@@ -1,0 +1,21 @@
+.site-hero {
+  display: grid;
+  place-items: center;
+  min-height: 20vh;
+
+  > .content {
+    display: grid;
+    justify-content: center;
+    > .logo {
+      justify-self: center;
+      color: var(--c-fancy);
+    }
+    > .title {
+      text-align: center;
+    }
+    > .lead {
+      text-align: center;
+      color: var(--c-text);
+    }
+  }
+}

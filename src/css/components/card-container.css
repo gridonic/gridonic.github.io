@@ -1,0 +1,9 @@
+.card-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+
+  @media (--md-up) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

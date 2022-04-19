@@ -1,0 +1,41 @@
+.site-header {
+
+  position: sticky;
+  top: 0;
+
+  border-bottom: 1px solid var(--c-neutral-90);
+  padding: 0.5rem 0;
+  background-color: var(--c-background);
+
+  > .content {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+
+    > .brand {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      > .logo {
+        font-size: 0;
+        > svg {
+          color: var(--c-fancy);
+        }
+      }
+    }
+
+    > .icons {
+      display: flex;
+      gap: 1rem;
+
+      > .theme,
+      > .github {
+        cursor: pointer;
+        color: var(--c-fancy);
+        font-size: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<svg height="50" width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" data-gdl-animation="">
+  <defs>
+      <mask id="gdl-mask">
+          <circle cx="400" cy="400" r="400" fill="#FFFFFF"></circle>
+          <g id="gdl-body-group" fill="none" stroke="#000000" stroke-width="42" style="opacity: 1;">
+              <path id="gdl-body" d="M399.215 361.497 474.413 286.642 400.215 213.25 325.223 287.642 474.413 436.715 312.44 598.762" style="stroke-dashoffset: 1512.24; stroke-dasharray: 756.119, 756.119, 756.119;"></path>
+              <path id="gdl-armleft" d="M398.491268,507.491268 L312,421" style="stroke-dashoffset: 244.634; stroke-dasharray: 122.317, 122.317, 122.317;"></path>
+              <path id="gdl-legright" d="M488.491268,598.491268 L402,512" style="stroke-dashoffset: 244.634; stroke-dasharray: 122.317, 122.317, 122.317;"></path>
+              <path id="gdl-handleft" d="M312.467716,421.69433 L237,347" style="stroke-dashoffset: 212.364; stroke-dasharray: 106.182, 169.891, 42.4728;"></path>
+              <path id="gdl-handright" d="M487.94171,422.927366 L563.721672,347.147404" style="stroke-dashoffset: 214.338; stroke-dasharray: 107.169, 171.47, 42.8676;"></path>
+          </g>
+      </mask>
+  </defs>
+  <circle mask="url(#gdl-mask)" fill="currentColor" cx="400" cy="400" r="400"></circle>
+</svg>

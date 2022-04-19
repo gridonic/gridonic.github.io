@@ -1,0 +1,31 @@
+.card-item {
+  display: grid;
+  border-radius: 12px;
+  padding: 2rem;
+  color: var(--c-text);
+  box-shadow: var(--box-shaddow-light);
+
+  &:hover {
+    box-shadow: var(--box-shaddow-dark);
+  }
+
+  > .icon {
+    justify-self: center;
+    background: var(--c-fancy);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    > svg {
+      color: var(--c-neutral-100);
+    }
+  }
+
+  > .title {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+  > .description {
+    font-size: 14px;
+  }
+}
