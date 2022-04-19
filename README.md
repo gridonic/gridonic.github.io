@@ -1,6 +1,4 @@
-<h2 align="center">
-  <img src="https://gridonic.github.io/assets/images/logos/gridonic.svg" width="256" alt="Gridonic AG">
-</h2>
+<h1>Gridonic<br>Open Source Projects</h1>
 <p align="center">
   <a href="https://gridonic.ch">gridonic.ch</a> ・
   <a href="https://gridonic.github.io">gridonic.github.io</a> ・
