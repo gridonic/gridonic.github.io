@@ -6,7 +6,7 @@
 </p>
 
 ## Demo
-[gridonic.github.io]('https://gridonic.github.io')
+https://gridonic.github.io
 
 ## Development
 Clone the repo and start the local dev server http://localhost:3000.
