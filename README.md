@@ -32,6 +32,7 @@ git tag x.x.x
 git push --tags
 ```
 
+This scritp will will merge the `main` branch intoto the `gh-pages` branch.
 ```sh
 # run the deployment script
 sh deploy.sh
