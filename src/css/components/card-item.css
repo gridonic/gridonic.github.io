@@ -17,6 +17,8 @@
     margin: 2rem 0;
     > svg {
       color: var(--c-neutral-100);
+      width: 4rem;
+      height: 4rem;
     }
   }
 
