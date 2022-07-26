@@ -18,7 +18,7 @@ npm run dev
 ```
 
 ## Preview
-The vite preview command will boot up local static web server that serves the files from dist at http://localhost:4173.
+The vite preview command will boot up static web server which serves the files from dist at http://localhost:4173.
 ```sh
 npm run build
 npm run preview
@@ -27,12 +27,12 @@ npm run preview
 ## Deployment
 Deploy a new version to github pages
 ```sh
-# crate and push a new tag
+# create and push a new tag
 git tag x.x.x
 git push --tags
 ```
 
-This scritp will will merge the `main` branch intoto the `gh-pages` branch.
+This script will merge the `main` branch into the `gh-pages` branch.
 ```sh
 # run the deployment script
 sh deploy.sh
